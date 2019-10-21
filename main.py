@@ -29,7 +29,6 @@ for line in lines:
     while ser.inWaiting() < 32:
         continue
     hashVal = ser.read_until(size=32)
-    print(hashVal)
     if hashVal.decode('ascii') == toCrack:
         print("Found! -- " + line)
         ser.close()
