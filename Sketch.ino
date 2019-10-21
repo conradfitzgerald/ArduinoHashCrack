@@ -1,16 +1,16 @@
 #include <MD5.h>
+
+// Globals
 char returnVal[33]; //An MD5 hash is ALWAYS 32 characters long, or 128bit. Add an extra byte for null-termination.
 char buf[64]; //The max Serial buffer is 64 bytes.
 
 void setup() {
-  pinMode(2, INPUT_PULLUP); //Unnecessary at the moment, will be needed later.
   Serial.begin(115200);
-  //delay(1000); //A second to start up properly.
 }
 
 void clearBuffer(){
   for (int i = 0; i < 64; ++i){
-    buf[i] = 0x00;
+    buf[i] = 0x00; // Write null-bytes over the whole thing.
   }
 }
 
@@ -33,6 +33,6 @@ void loop() {
           hashMD5(buf);
           Serial.print(returnVal);
       }
-      Serial.flush();
+      Serial.flush(); // Clear residual Serial data, shouldn't be needed and can be commented out for reducing sketch size/increasing performance.
   }
 }
