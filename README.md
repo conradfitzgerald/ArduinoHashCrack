@@ -20,12 +20,6 @@ A basic Proof-of-Concept for cracking MD5 hashes with an Arduino board.
 ## License
 GPLv2. Do what you will with it, and let me know if you make anything cool with it!
 
-## Instructables Disclaimer
-I initially made this project as an entry to the Instructables contest 'First-Time Authors 2019.' My username there is ConradF4. I'm mainly including this as a disclaimer for originality, and that I am the sole author of the project, with the exception of Tzikis who wrote the hashing library I used and that I have creditted.
-
-#### Update:
-Has since been unpublished, guess I should read their ToS next time ;)
-
 ## Credz/Greetz
 * Tzikis for the library
 * My girlfriend for yelling at me to finally make something useful and original.
